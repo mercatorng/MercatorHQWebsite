@@ -9,6 +9,8 @@
 
   --color-blue:  #27AAE1;
   --color-blue-secondary: #0D72AE;
+
+  scroll-behavior: smooth;
 }
 
 html,body {
@@ -282,6 +284,25 @@ a.big-mr { margin-right: 1rem;}
 .blog-item .blog-img {
   display: block;
   height: 15rem;
+}
+
+.leaving-cash {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2;
+}
+
+.text-content {
+  width: 75%;
+}
+
+.text-content .title {
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
 .free-section {
