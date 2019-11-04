@@ -524,4 +524,51 @@ a.big-mr { margin-right: 1rem;}
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.dashed-border {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 2rem;
+  border: 1.5rem dashed var(--color-blue);
+
+  font-size: 1.5rem;
+
+}
+
+.dashed-border .input-box {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.mail-phone img {
+  width: 4rem;
+}
+
+.textarea-group > * {
+  display: block;
+}
+
+.address-box {
+  width: 40rem;
+}
+
+.mapouter {
+  margin-bottom: 3.5rem;
+}
+
+.address-box .address-group {
+  text-align: left;
+}
+
+.addr-value {
+  font-size: 1rem;
 }
