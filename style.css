@@ -92,6 +92,10 @@ body {
 .nav-links .active {
   color: var(--color-yellow);
 }
+.nav-links .active {
+  font-weight: bolder;
+}
+
 
 .image-slider {
   height: 90vh;
