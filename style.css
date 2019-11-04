@@ -93,18 +93,6 @@ body {
   color: var(--color-yellow);
 }
 
-.main-navigation .signIn-btn {
-  display: inline-block;
-  padding: .8rem 1.4rem;
-  border: 1px solid var(--color-yellow);
-  border-radius: 4px;
-}
-
-.signIn-btn:hover {
-  background: var(--color-yellow);
-  color: #fff;
-}
-
 .image-slider {
   height: 90vh;
 }
