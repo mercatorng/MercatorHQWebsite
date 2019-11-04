@@ -1,0 +1,527 @@
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+
+  --color-yellow: #FBB415;
+
+  --color-blue:  #27AAE1;
+  --color-blue-secondary: #0D72AE;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+.text-bold {font-weight: bold;}
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+.pad-top-small {padding-top: 2rem;}
+.pad-btm-5 {padding-bottom: 5rem;}
+.margin-top-3 {margin-top: 3rem;}
+.margin-btm-3 {margin-bottom: 3rem;}
+.font-sz-2 {font-size: 2.5rem;}
+.width-85 { width: 85%;}
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bolder {font-weight: bolder;}
+
+.header {
+  position:absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  background:transparent;
+
+  z-index: 1000;
+}
+
+
+
+
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 7.5rem;
+
+  font-size: 1.5rem;
+}
+
+.logo-box img {
+  height: 4rem;
+}
+
+
+.main-navigation .nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  list-style: none; 
+}
+
+
+.main-navigation a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links a:hover {
+  color: var(--color-yellow);
+}
+
+.main-navigation .signIn-btn {
+  display: inline-block;
+  padding: .8rem 1.4rem;
+  border: 1px solid var(--color-yellow);
+  border-radius: 4px;
+}
+
+.signIn-btn:hover {
+  background: var(--color-yellow);
+  color: #fff;
+}
+
+.image-slider {
+  height: 90vh;
+}
+
+
+/* HOME PAGE */
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .carousel-item {
+  height: 95vh;
+}
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, .1);
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.text-white {color:#fff;}
+.text-yellow {color: var(--color-yellow);}
+.text-blue {color: var(--color-blue);}
+
+.caption-center {
+  position: absolute;
+  top: 30%;
+  width: 70%;
+}
+
+a.big {
+  height: 5rem;
+  top: 40%;
+  width: 5rem;
+  border-radius: 50%;
+  background: var(--color-blue-secondary);
+  margin-left: 10px;
+}
+
+a.big-ml {margin-left: 1rem;}
+a.big-mr { margin-right: 1rem;}
+
+.large-btn {
+  font-size: 1.6rem;
+  padding: .6rem 2rem;
+  transition: all .3s;
+  border-radius: 1.6rem;
+}
+
+.large-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0,.3);
+}
+
+.main {
+  position: relative;
+  top: .2rem;
+  background:#77747440;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  font-size: 1.2rem;
+
+}
+
+.section-title {
+  font-size: 1.5rem;
+}
+
+
+.product-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+  text-align: left;
+}
+
+.product-section .section-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  background: white;
+  border-radius: .9rem;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.section-item .item-title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.offering-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 45rem;
+  background: url('./images/home/ourServices.png') #f7f7f7;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.small-heading {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.heading-4 {font-size:2rem;}
+
+.text-grey {color: grey;}
+
+.section-flex {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.flex__item {
+  width: 25rem;
+  text-align: right;
+}
+
+.flex__item__child {
+  margin-top: 2.5rem;
+}
+
+.blog-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+.blog-item {
+  width: 32rem;
+  margin: 1rem;
+}
+
+.blog-item .blog-img {
+  display: block;
+  height: 15rem;
+}
+
+.free-section {
+  width: 100%;
+  height: 50rem;
+  background-image: url('./images/home/blackwoman.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.partner-section  {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partner-section .section-flex {
+  width: 80%;
+}
+
+.partner-item img {
+  display: block;
+  height: 5rem;
+}
+
+
+.main-footer {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+ 
+  background-color: #272727;
+  color: white;
+}
+
+.social-links .social-icon{
+  color: whitesmoke;
+  font-size: 2rem;
+  display: inline-block;
+  padding: .6rem;
+  margin-right: 1rem;
+  background: grey;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.footer-text {
+  font-size: 1.4rem;
+}
+
+.main-footer a.to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  display: inline-block;
+  padding: 1rem 1.4rem;
+  background-color: var(--color-blue-secondary);
+  border-radius: 50%;
+
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* ABOUT PAGE */
+
+.banner, .request-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/about/adigunSofa2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner p {
+  width: 35%;
+  font-size: 5rem;
+  font-weight: 700;
+
+}
+
+.main .about-section {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title {
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text-body {
+  color: grey !important;
+}
+
+.about-flex {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-wrap: wrap;
+
+}
+
+.about-flex .text-body {
+ width: 50rem;
+ font-size: 1.5rem;
+ text-align: justify;
+}
+
+.about-flex .about-image {
+  width: 35rem;
+}
+
+.about-image img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery-section {
+  background-color: #FFF;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.gallery-grid {
+  width: 40%;
+  display: grid;
+  grid-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-auto-rows: 25rem;
+}
+
+.gallery-grid > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.gallery-grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-section .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gallery-section .carousel-inner,
+.gallery-section .carousel,
+.gallery-section.item,
+.gallery-section .container,
+.gallery-section .fill {
+  height:45rem;
+  width:80%;
+  background-position:center;
+}
+
+
+.request-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35rem;
+  background-image: url('./images/about/colorpattn.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.request-demo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.request-demo .title {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+
+/* REQUEST DEMO */
+
+.request-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-image: url('./images/demo/blackwoman.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.request-banner p {
+  font-size: 4.5rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.white-bg { background-color: #fff;}
+
+.main .request-form {
+  width: 25%;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.request-form .btn-lg {
+  width: 25%;
+  text-align: center;
+  padding: .5rem 2rem;
+}
+
+.center {
+  display: flex; justify-content: center;
+}
+
+.request-form .form-control {
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+
+
+/* CONTACT US PAGE */
+
+
+.contact-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url('./images/contact/contactus.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
