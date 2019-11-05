@@ -38,6 +38,7 @@ body {
 .margin-btm-3 {margin-bottom: 3rem;}
 .font-sz-2 {font-size: 2.5rem;}
 .width-85 { width: 85%;}
+.width-50 {width: 50%;}
 .vertical-center {
   display: flex;
   flex-direction: column;
@@ -200,6 +201,12 @@ a.big-mr { margin-right: 1rem;}
 
 .section-title {
   font-size: 1.5rem;
+}
+
+.our-approach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
