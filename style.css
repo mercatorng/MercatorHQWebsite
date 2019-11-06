@@ -28,10 +28,11 @@ body {
 }
 
 /* UTILITIES */
-
+.uppercase {text-transform: uppercase;}
 .text-bold {font-weight: bold;}
 .text-center {text-align: center;}
 .text-left {text-align: left;}
+.text-right {text-align: right;}
 .pad-top-small {padding-top: 2rem;}
 .pad-btm-5 {padding-bottom: 5rem;}
 .margin-top-3 {margin-top: 3rem;}
@@ -107,14 +108,18 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background: #f1f1f1;
-  min-width: 16rem;
+  top: 200%;
+  background: #fff;
+  min-width: 27rem;
+  border-radius: 1.6rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+  font-size: 1.2rem;
   z-index: 10000;
 }
 
@@ -123,11 +128,11 @@ body {
   padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: block;
+  line-height: 80%;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+/* .dropdown-content a:hover {background-color: #ddd;} */
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #fff;}
 
 
 .image-slider {
@@ -268,7 +273,6 @@ a.big-mr { margin-right: 1rem;}
 
 .flex__item {
   width: 25rem;
-  text-align: right;
 }
 
 .flex__item__child {
@@ -384,6 +388,19 @@ a.big-mr { margin-right: 1rem;}
 
 /* ABOUT PAGE */
 
+.banner {
+  position: relative;
+}
+
+.banner .blue-layer {
+  background-color: rgba(105, 174, 252, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .banner, .request-banner {
   display: flex;
   justify-content: center;
@@ -395,10 +412,13 @@ a.big-mr { margin-right: 1rem;}
   background-position: center;
 }
 
+
+
 .banner p {
-  width: 35%;
+  width: 32%;
   font-size: 5rem;
   font-weight: 700;
+  text-align: center;
 
 }
 
