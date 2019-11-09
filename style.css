@@ -153,7 +153,8 @@ body {
   height: 95vh;
 }
 .carousel-caption p {
-  background-color: rgba(0, 0, 0, .1);
+  /* background-color: rgba(0, 0, 0, .04); */
+  border: none;
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 5px;
@@ -648,3 +649,6 @@ a.big-mr { margin-right: 1rem;}
 .addr-value {
   font-size: 1rem;
 }
+
+
+
