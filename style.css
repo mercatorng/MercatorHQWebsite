@@ -630,14 +630,20 @@ a.big-mr {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 60vh;
   background-image: url("./images/contact/contactus.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 
-  font-size: 5rem;
+  font-size: 5vw;
   font-weight: bolder;
+}
+
+.contact-banner p {
+  width: 80%;
+  text-align: center;
+
 }
 
 .dashed-border {
@@ -715,7 +721,7 @@ a.big-mr {
 
   .banner p {
     width: 100%;
-    font-size: 6vw;
+    font-size: 8vw;
   }
 
   .gallery-section .carousel-inner,
@@ -726,6 +732,17 @@ a.big-mr {
     height: 45rem;
     width: 100%;
     background-position: center;
+  }
+
+  .contact-banner p {
+    font-size: 5vw;
+  }
+
+  .dashed-border {
+    width: 100%;
+  }
+  .address-box {
+    width: 100%;
   }
 }
 
