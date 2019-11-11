@@ -39,7 +39,9 @@ body {
 .margin-btm-3 {margin-bottom: 3rem;}
 .font-sz-2 {font-size: 2.5rem;}
 .width-85 { width: 85%;}
+.width-60 {width: 60% !important;}
 .width-50 {width: 50%;}
+.width-20 {width: 20%;}
 .vertical-center {
   display: flex;
   flex-direction: column;
@@ -54,7 +56,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 10vh;
+  height: auto;
   background:transparent;
 
   z-index: 1000;
@@ -66,10 +68,11 @@ body {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: center;
   width: 90%;
-  height: 7.5rem;
+  height: 90%;
+  background-color: transparent;
 
   font-size: 1.5rem;
 }
@@ -82,8 +85,14 @@ body {
 .main-navigation .nav-links {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 100%;
   list-style: none; 
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between !important;
+  
 }
 
 
@@ -91,6 +100,8 @@ body {
   text-decoration: none;
   color: #000;
 }
+
+.main-navigation .menu-icon {font-size: 2rem;}
 
 .nav-links a:hover,
 .nav-links .active {
@@ -648,6 +659,18 @@ a.big-mr { margin-right: 1rem;}
 
 .addr-value {
   font-size: 1rem;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .header {
+    background-color: rgba(255, 255, 255,.5);
+  }
+
+  .navbar-toggler {outline: none !important;}
+
+  .main-navigation {width: 100%;}
 }
 
 
