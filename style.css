@@ -56,6 +56,9 @@ body {
 .margin-btm-3 {
   margin-bottom: 3rem;
 }
+.margin-right-2 {
+  margin-right: 2rem;
+}
 .font-sz-2 {
   font-size: 2.5rem;
 }
@@ -516,7 +519,7 @@ a.big-mr {
 }
 
 .gallery-grid {
-  width: 50%;
+  width: 45%;
   display: grid;
   grid-gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -531,15 +534,18 @@ a.big-mr {
   color: #ffeead;
 }
 
+.gallery-section .container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
 .gallery-grid > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.gallery-section .container {
-  display: flex;
-  justify-content: flex-end;
-}
+
 
 .gallery-section .carousel-inner,
 .gallery-section .carousel,
@@ -551,6 +557,38 @@ a.big-mr {
   background-position: center;
 }
 
+.gallery-section .image-slider {
+  width: 90rem;
+}
+
+.gallery-section   .carousel .carousel-item {
+  height: 40rem;
+  margin-right: 2rem;
+}
+
+.gallery-section .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+.carousel a.big {
+  height: 5rem;
+  top: 40%;
+  width: 5rem;
+  border-radius: 50%;
+  background: var(--color-yellow);
+  margin-left: 10px;
+}
+
+.carousel a.big-ml {
+  margin-left: -8rem;
+}
+.carousel a.big-mr {
+  margin-right: 11rem;
+}
+
 .request-demo {
   position: relative;
   display: flex;
@@ -558,7 +596,7 @@ a.big-mr {
   align-items: center;
   width: 100%;
   height: 35rem;
-  background-image: url("./images/about/businessgrowing.png");
+  background-image: url("./images/about/grow.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -568,8 +606,6 @@ a.big-mr {
 }
 
 .request-demo div {
-  position: absolute;
-  top: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -748,16 +784,6 @@ a.big-mr {
   .banner p {
     width: 100%;
     font-size: 8vw;
-  }
-
-  .gallery-section .carousel-inner,
-  .gallery-section .carousel,
-  .gallery-section.item,
-  .gallery-section .container,
-  .gallery-section .fill {
-    height: 45rem;
-    width: 100%;
-    background-position: center;
   }
 
   .contact-banner p {
