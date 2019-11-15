@@ -114,7 +114,9 @@ body {
 .main-navigation .nav-links {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 65% !important;
+  margin-left: auto !important;
+  margin-right: 0px !important;
   list-style: none;
 }
 
