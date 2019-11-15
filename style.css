@@ -176,6 +176,8 @@ body {
 
 .image-slider {
   height: 90vh;
+  display: flex;
+  justify-content: center;
 }
 
 /* HOME PAGE */
@@ -218,14 +220,14 @@ a.big {
   width: 5rem;
   border-radius: 50%;
   background: var(--color-blue-secondary);
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 a.big-ml {
-  margin-left: 1rem;
+  margin-left: 0px !important;
 }
 a.big-mr {
-  margin-right: 1rem;
+  margin-right: 0px !important;
 }
 
 .large-btn {
