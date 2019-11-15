@@ -781,21 +781,17 @@ a.big-mr {
   }
 
   .flex__item__child {
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem .5rem;
   }
-  /* .center-image {
-
-
-  } */
+  
 
   .flex__item__child p {
     width: 70%;
     text-align: left;
-    /* color: black; */
     font-size: 1.4rem;
   }
 
